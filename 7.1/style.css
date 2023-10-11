@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.logo {
+    background-color: rgb(255, 89, 89);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logotext {
+    color: white;
+    height: 75%;
+    font-size: 250%;
+    margin-left: 5%;
+    order: 2;
+}
+
+.top {
+    background-color: rgb(249, 255, 89);
+    height: 30vh;
+    order: 2;
+}
+
+.middle {
+    background-color: rgb(255, 172, 89);
+    height: 30vh;
+    order: 3;
+}
+
+.bottom {
+    background-color: rgb(89, 255, 111);
+    height: 30vh;
+    order: 4;
+}
+
+.text {
+    height: 10%;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+}
+
+.subtext {
+    height: 10%;
+    font-size: 125%;
+    margin-top: 0%;
+    margin-left: 5%;
+}
+
+.mobilediv {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin-left: 2.5%;
+    order: 1;
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .mobilediv {
+    width: 0px;
+    height: 0px;
+    order: 3;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .logo {
+        background-color: rgb(255, 137, 137);
+        display: block;
+    }
+
+    .logotext {
+        margin-left: 0%;
+        text-align: center;
+        font-size: 100%;
+    }
+
+    .text {
+        color: white;
+    }
+
+    .subtext {
+        color: white;
+    }
+
+    .top {
+        background-color: rgb(234, 75, 75);
+    }
+
+    .middle {
+        background-color: rgb(97, 65, 255);
+    }
+
+    .bottom {
+        background-color: rgb(42, 72, 174);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .logo {
+        background-color: rgb(132, 65, 255);
+        display: block;
+    }
+
+    .logotext {
+        text-align: left;
+        font-size: 100%;
+    }
+
+    .mobilediv {
+        float: right;
+        margin-left: 85%;
+        margin-top: -11%;
+        position: fixed;
+    }
+
+    .text {
+        text-align: center;
+        color: white;
+    }
+
+    .subtext {
+        text-align: center;
+        color: white;
+    }
+
+    .top {
+        background-color: rgb(65, 211, 255);
+    }
+
+    .middle {
+        background-color: rgb(246, 65, 255);
+    }
+
+    .bottom {
+        background-color: rgb(57, 37, 122);
+    }
+}
